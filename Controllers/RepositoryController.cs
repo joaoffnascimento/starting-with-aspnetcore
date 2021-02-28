@@ -54,7 +54,7 @@ namespace starting_with_aspnetcore3._1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,Stars,About,Id")] Repository repository)
+        public async Task<IActionResult> Create([Bind("Title,Stars,About,Id,Email")] Repository repository)
         {
             if (ModelState.IsValid)
             {
