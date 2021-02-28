@@ -6,13 +6,13 @@ namespace starting_with_aspnetcore.Models
     {
         public Entity()
         {
-            Id = Guid.NewGuid();
-            createdAt = DateTime.Now;
-            createdAt = DateTime.Now;
+            this.Id = Guid.NewGuid();
+            this.CreatedAt = DateTime.Now;
+            this.UpdatedAt = DateTime.Now;
         }
 
         public Guid Id { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime updatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }

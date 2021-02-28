@@ -58,10 +58,6 @@ namespace starting_with_aspnetcore3._1.Controllers
         {
             if (ModelState.IsValid)
             {
-                repository.Id = Guid.NewGuid();
-                repository.createdAt = DateTime.Now;
-                repository.updatedAt = DateTime.Now;
-                
                 _context.Add(repository);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
