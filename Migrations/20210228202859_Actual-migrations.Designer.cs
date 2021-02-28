@@ -10,7 +10,7 @@ using starting_with_aspnetcore.Data;
 namespace starting_with_aspnetcore.Migrations
 {
     [DbContext(typeof(DbSetup))]
-    [Migration("20210228202618_Actual-migrations")]
+    [Migration("20210228202859_Actual-migrations")]
     partial class Actualmigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,9 +23,9 @@ namespace starting_with_aspnetcore.Migrations
 
             modelBuilder.Entity("starting_with_aspnetcore.Models.Repository", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("varchar(16)");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("About")
                         .IsRequired()
@@ -55,15 +55,15 @@ namespace starting_with_aspnetcore.Migrations
 
             modelBuilder.Entity("starting_with_aspnetcore.Models.Tech", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("varchar(16)");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("RepositoryId")
-                        .HasColumnType("varchar(16)");
+                    b.Property<Guid?>("RepositoryId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");

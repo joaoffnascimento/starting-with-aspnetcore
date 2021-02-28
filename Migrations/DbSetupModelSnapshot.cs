@@ -21,9 +21,9 @@ namespace starting_with_aspnetcore.Migrations
 
             modelBuilder.Entity("starting_with_aspnetcore.Models.Repository", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("varchar(16)");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("About")
                         .IsRequired()
@@ -53,15 +53,15 @@ namespace starting_with_aspnetcore.Migrations
 
             modelBuilder.Entity("starting_with_aspnetcore.Models.Tech", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("varchar(16)");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("RepositoryId")
-                        .HasColumnType("varchar(16)");
+                    b.Property<Guid?>("RepositoryId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");

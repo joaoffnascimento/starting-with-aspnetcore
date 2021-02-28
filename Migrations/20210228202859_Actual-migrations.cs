@@ -11,7 +11,7 @@ namespace starting_with_aspnetcore.Migrations
                 name: "Repository",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(16)", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Title = table.Column<string>(type: "varchar(100)", nullable: false),
                     Stars = table.Column<int>(type: "int", nullable: false),
                     About = table.Column<string>(type: "varchar(100)", nullable: false),
@@ -28,9 +28,9 @@ namespace starting_with_aspnetcore.Migrations
                 name: "Tech",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(16)", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     name = table.Column<string>(type: "varchar(100)", nullable: false),
-                    RepositoryId = table.Column<string>(type: "varchar(16)", nullable: true),
+                    RepositoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },

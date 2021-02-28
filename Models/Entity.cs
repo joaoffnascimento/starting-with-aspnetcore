@@ -14,7 +14,6 @@ namespace starting_with_aspnetcore.Models
         }
         
         [Required]
-        [Column(TypeName = "varchar(16)")]
         public Guid Id { get; set; }
         
         [Required]
