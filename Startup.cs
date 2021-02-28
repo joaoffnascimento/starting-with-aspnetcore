@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace starting_with_aspnetcore3._1
+namespace starting_with_aspnetcore
 {
     public class Startup
     {

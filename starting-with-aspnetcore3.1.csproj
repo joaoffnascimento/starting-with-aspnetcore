@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>starting_with_aspnetcore3._1</RootNamespace>
+    <RootNamespace>starting_with_aspnetcore</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

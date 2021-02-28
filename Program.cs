@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace starting_with_aspnetcore3._1
+namespace starting_with_aspnetcore
 {
     public class Program
     {
