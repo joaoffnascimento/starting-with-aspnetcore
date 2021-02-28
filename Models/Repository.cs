@@ -8,5 +8,6 @@ namespace starting_with_aspnetcore.Models
         public ICollection<Tech> Techs { get; set; }
         public int Stars { get; set; }
         public string About { get; set; }
+        public string Email { get; set; }
     }
 }
