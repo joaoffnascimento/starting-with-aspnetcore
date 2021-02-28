@@ -37,7 +37,7 @@ namespace starting_with_aspnetcore.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<int>("Stars")
-                        .HasColumnType("int(1)");
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()

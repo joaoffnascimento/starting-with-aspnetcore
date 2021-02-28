@@ -10,7 +10,7 @@ using starting_with_aspnetcore.Data;
 namespace starting_with_aspnetcore.Migrations
 {
     [DbContext(typeof(DbSetup))]
-    [Migration("20210228200754_Actual-migrations")]
+    [Migration("20210228202618_Actual-migrations")]
     partial class Actualmigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,7 +39,7 @@ namespace starting_with_aspnetcore.Migrations
                         .HasColumnType("varchar(100)");
 
                     b.Property<int>("Stars")
-                        .HasColumnType("int(1)");
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()

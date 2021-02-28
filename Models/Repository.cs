@@ -12,7 +12,7 @@ namespace starting_with_aspnetcore.Models
         public ICollection<Tech> Techs { get; set; }
 
         [Required]
-        [Column(TypeName = "int(1)")]
+        [Column(TypeName = "int")]
         public int Stars { get; set; }
 
         [Required]
